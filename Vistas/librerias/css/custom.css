@@ -1,0 +1,28 @@
+/* your styles go here */
+@media (min-width: 576px) {
+  .tamaño-lottie {
+    width: 270px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tamaño-lottie {
+    width: 550px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tamaño-lottie {
+    width: 700px;
+    height: 400px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .tamaño-lottie {
+    width: 750px;
+    height: 420px; 
+  }
+}
