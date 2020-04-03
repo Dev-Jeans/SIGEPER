@@ -62,15 +62,8 @@
                           </select>
                         </div>
                         <div class="form-group col-md-2">
-                          <label>Fecha de Nacimiento</label> 
-                          <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text bg-white">
-                                  <i class="far fa-calendar-alt"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control">
-                          </div>
+                          <label>Fecha de Nacimiento</label>
+                          <input type="text" placeholder="" class="form-control my-icon">
                         </div>
                         <div class="form-group col-md-2">
                           <label>Lugar de Nacimiento</label>
@@ -206,14 +199,7 @@
                         </div>
                         <div class="form-group col-md-2">
                           <label>Fecha de Inicio</label> 
-                          <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text bg-white">
-                                  <i class="far fa-calendar-alt"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control">
-                          </div>
+                          <input type="text" placeholder="" class="form-control my-icon">
                         </div>
                         <div class="form-group col-md-3">
                           <label>Area</label>
@@ -274,14 +260,7 @@
                         </div>
                         <div class="form-group col-md-2">
                           <label>Fecha de Inicio</label> 
-                          <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text bg-white">
-                                  <i class="far fa-calendar-alt"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control">
-                          </div>
+                          <input type="text" placeholder="" class="form-control my-icon">
                         </div>
                       </div>
                     </div>

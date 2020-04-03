@@ -4,7 +4,7 @@
             <div class="row">
               <div class="col-12 text-center text-lg-left">
                   <div class="form-group">       
-                    <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#crearCliente">Nuevo cliente</button>
+                    <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#crearUsuario">Nuevo servicio</button>
                   </div>
               </div>
               <div class="col-lg-12 mb-4">
@@ -17,8 +17,8 @@
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>Razón Social</th>
-                          <th>R.U.C</th>
+                          <th>Campaña</th>
+                          <th>Cliente</th>
                           <th>Fecha de Registro</th>
                           <th>Estado</th>
                           <th>Acciones</th>
@@ -27,8 +27,8 @@
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
+                          <td>RENOVACIÓN ESPECIAL</td>
                           <td>AMERICA MOVIL DEL PERU S.A</td>
-                          <td>2014521414</td>
                           <td>2020-03-25 00:00:00</td>
                           <td><button class="btn btn-success btn-sm">ACTIVO</button></td>
                           <td>
@@ -48,10 +48,10 @@
     </div>  
     <!--termina seccion usuarios-->
     <!--Inicia Modal nuevo-->
-    <div id="crearCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+    <div id="crearUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
       <div role="document" class="modal-dialog">
         <div class="modal-content">
-        <!--<form role="form" method="POST">-->
+        <form role="form" method="POST">
           <div class="modal-header">
             <h4 id="exampleModalLabel" class="modal-title">Nuevo Cliente</h4>
             <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
@@ -60,17 +60,8 @@
             <p>Registro de nuevo cliente</p>
           
               <div class="form-group">
-                <label>Consulta Sunat</label>
-                <div class="input-group">
-                  <input type="text" id="ruc" name="ruc" class="form-control">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" id="btnSearchRuc"><i class="fas fa-search"></i> Buscar</button>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label>R.U.C</label>
-                <input type="text" class="form-control" readonly>
+                <label>R.U.C O Documento de Identidad</label>
+                <input type="text" placeholder="RUC o DNI" class="form-control">
               </div>
               <div class="form-group">       
                 <label>Razon Social</label>
@@ -85,7 +76,7 @@
             <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
             <button type="button" class="btn btn-primary">Guardar cliente</button>
           </div>
-          <!--</form>-->
+          </form>
         </div>
       </div>
     </div>

@@ -66,7 +66,7 @@
  
        if (isset($_GET["ruta"])) {
          
-         if ($_GET["ruta"] == "home" || $_GET["ruta"] == "usuarios" || $_GET["ruta"] == "empleados" || $_GET["ruta"] == "nuevo-empleado" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "clientes") {
+         if ($_GET["ruta"] == "home" || $_GET["ruta"] == "usuarios" || $_GET["ruta"] == "empleados" || $_GET["ruta"] == "nuevo-empleado" || $_GET["ruta"] == "salir" || $_GET["ruta"] == "clientes" || $_GET["ruta"] == "servicios") {
            include "modulos/".$_GET["ruta"].".php";
          }else {
            
@@ -98,6 +98,7 @@
   <script src="Vistas/librerias/js/main.js"></script>
   <script src="Vistas/librerias/js/datatables.js"></script>
   <script src="Vistas/librerias/js/usuarios.js"></script>
+  <script src="Vistas/librerias/js/clientes.js"></script>
  
   </body>
 </html>

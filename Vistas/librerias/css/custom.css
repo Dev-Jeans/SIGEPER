@@ -26,3 +26,37 @@
     height: 420px; 
   }
 }
+
+.my-icon {
+  padding-right: calc(1.5em + .75rem);
+  background-image: url('https://use.fontawesome.com/releases/v5.8.2/svgs/regular/calendar-alt.svg');
+  background-repeat: no-repeat;
+  background-position: center right calc(.375em + .1875rem);
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.icon-load {
+  padding-right: calc(1.5em + .75rem);
+  background-image: url('../img/icon-load.gif');
+  background-repeat: no-repeat;
+  background-position: center right calc(.375em + .1875rem);
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.icon-check {
+  padding-right: calc(1.5em + .75rem);
+  background-image: url('../img/icon-check.png');
+  background-repeat: no-repeat;
+  background-position: center right calc(.375em + .1875rem);
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.icon-error {
+  padding-right: calc(1.5em + .75rem);
+  background-image: url('../img/icon-error.jpg');
+  background-repeat: no-repeat;
+  background-position: center right calc(.375em + .1875rem);
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+

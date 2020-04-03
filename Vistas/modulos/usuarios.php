@@ -95,7 +95,7 @@
             <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
           </div>
           <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Complete los campos para registrar al nuevo usuario</p>
           
               <div class="form-group">
                 <label>Usuario</label>
@@ -149,7 +149,7 @@
             <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
           </div>
           <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Editar datos del usuario</p>
               <div id="editarContenido">
                 
               </div>

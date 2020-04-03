@@ -20,11 +20,11 @@
               </ul>
             </div>
           </li>
-          <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#Clientes" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-paperwork-1 mr-3 text-gray"></i><span class="d-none">Clientes</span></a>
+          <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#Clientes" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-archive-folder-1 mr-3 text-gray"></i><span class="d-none">Clientes</span></a>
             <div id="Clientes" class="collapse">
               <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
                 <li class="sidebar-list-item"><a href="clientes" class="sidebar-link text-muted pl-lg-5">Clientes</a></li>
-                <li class="sidebar-list-item"><a href="Campañas" class="sidebar-link text-muted pl-lg-5">Servicios</a></li>
+                <li class="sidebar-list-item"><a href="servicios" class="sidebar-link text-muted pl-lg-5">Servicios</a></li>
               </ul>
             </div>
           </li>
