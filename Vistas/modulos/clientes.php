@@ -51,7 +51,7 @@
     <div id="crearCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
       <div role="document" class="modal-dialog">
         <div class="modal-content">
-        <!--<form role="form" method="POST">-->
+        <form role="form" method="POST">
           <div class="modal-header">
             <h4 id="exampleModalLabel" class="modal-title">Nuevo Cliente</h4>
             <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
@@ -70,22 +70,22 @@
               </div>
               <div class="form-group">
                 <label>R.U.C</label>
-                <input type="text" class="form-control" readonly>
+                <input type="text" class="form-control" id="nroRuc" name="nroRuc" readonly>
               </div>
               <div class="form-group">       
                 <label>Razon Social</label>
-                <input type="text" class="form-control" readonly>
+                <input type="text" class="form-control" id="razonSocial" name="razonSocial" readonly>
               </div>
               <div class="form-group">       
                 <label>Domicilio</label>
-                <input type="text" class="form-control" readonly>
+                <input type="text" class="form-control" id="domicilio" name="domicilio" readonly>
               </div>
           </div>
           <div class="modal-footer">
             <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
             <button type="button" class="btn btn-primary">Guardar cliente</button>
           </div>
-          <!--</form>-->
+          </form>
         </div>
       </div>
     </div>
