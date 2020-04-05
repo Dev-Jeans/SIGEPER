@@ -25,19 +25,43 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>AMERICA MOVIL DEL PERU S.A</td>
-                          <td>2014521414</td>
-                          <td>2020-03-25 00:00:00</td>
-                          <td><button class="btn btn-success btn-sm">ACTIVO</button></td>
-                          <td>
-                            <div class="btn-group">
-                            <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal"><i class="far fa-edit"></i></button>
-                            <button class="btn btn-danger btn-sm"><i class="fa fa-times"></i></button>
-                            </div>
-                          </td>
-                        </tr>
+                      <?php
+
+                        $item = null;
+                        $valor = null;
+
+                        $clientes = ControladorClientes::ctrMostrarCliente($item, $valor);
+
+                        foreach ($clientes as $key => $value) {
+                          
+                          echo '<tr>
+                                  <th scope="row">'.($key+1).'</th>
+                                  <td>' . $value["RAZON_SOCIAL"] . '</td>
+                                  <td>' . $value["RUC"] . '</td>
+                                  <td>' . $value["FECHA_REGISTRO"] . '</td>';
+
+                                  if ($value["ESTADO"] == "ACTIVO") {
+                                  
+                                    echo '<td><button class="btn btn-success btn-sm">' . $value["ESTADO"] . '</button></td>';
+
+                                  }else {
+                                    
+                                    echo '<td><button class="btn btn-danger btn-sm">' . $value["ESTADO"] . '</button></td>';
+
+                                  }
+
+                                  
+
+                          echo'     <td>
+                                    <div class="btn-group">
+                                    <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal"><i class="far fa-edit"></i></button>
+                                  </td>
+                                </tr>';
+                          
+                        }
+
+                      ?>
+                        
                       </tbody>
                     </table>
                   </div>
@@ -83,8 +107,14 @@
           </div>
           <div class="modal-footer">
             <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
-            <button type="button" class="btn btn-primary">Guardar cliente</button>
+            <button type="submit" class="btn btn-primary">Guardar cliente</button>
           </div>
+          <?php
+
+            $crearCliente = new ControladorClientes();
+            $crearCliente -> ctrCrearCliente();
+
+          ?>
           </form>
         </div>
       </div>

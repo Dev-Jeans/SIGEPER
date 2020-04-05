@@ -27,7 +27,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <?php
+                      <?php
 
                         $item = null;
                         $valor = null;
