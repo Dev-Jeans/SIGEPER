@@ -1,9 +1,9 @@
 
 <?php
 
-//include_once '../Controladores/clientes.controlador.php';
+include_once '../Controladores/clientes.controlador.php';
 
-//include_once '../Modelos/clientes.modelo.php';
+include_once '../Modelos/clientes.modelo.php';
 
 
 
@@ -41,8 +41,36 @@ class AjaxClientes{
       
     }
     
+  }
 
-    
+  public $idCliente;
+
+  public function ajaxEditarCliente(){
+
+    $item = "ID_CLIENTE";
+
+    $valor = $this ->idCliente;
+
+    $respuesta = ControladorClientes::ctrMostrarCliente($item, $valor);
+
+    echo json_encode($respuesta);
+
+  }
+
+  public $estadoCliente;
+  public $idcliente;
+
+  public function ajaxEstadoCliente(){
+
+    $tabla = "cliente";
+
+    $item1 = "ESTADO";
+    $valor1 = $this->estadoCliente;
+
+    $item2 = "ID_CLIENTE";
+    $valor2 = $this->idcliente;
+
+    $respuesta = ModeloClientes::mdlActualizarCliente($tabla, $item1, $valor1, $item2, $valor2);
 
   }
 }
@@ -55,4 +83,24 @@ if (isset($_POST["consultaRuc"])) {
   $consulRuc -> consultaRuc = $_POST["consultaRuc"];
   $consulRuc -> ajaxConsultaRuc();
 
+}
+
+//editar cliente
+
+if (isset($_POST["idCliente"])) {
+
+  $editar = new AjaxClientes();
+  $editar -> idCliente = $_POST["idCliente"];
+  $editar -> ajaxEditarCliente();
+  
+}
+
+//activar o desactivar cliente
+
+if (isset($_POST["estadoCliente"])) {
+  
+  $estadoCli = new AjaxClientes;
+  $estadoCli -> idcliente = $_POST["idcliente"];
+  $estadoCli -> estadoCliente = $_POST["estadoCliente"];
+  $estadoCli -> ajaxEstadoCliente();
 }

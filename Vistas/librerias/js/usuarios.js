@@ -109,7 +109,7 @@ $(document).on("click" ,".btnEditarUsuario" ,function(){
 
 })
 
-//Activar usuario
+//Activar o desactivar usuario
 
 $(document).on("click" ,".btnActivar" ,function(){
 

@@ -42,11 +42,11 @@
 
                                   if ($value["ESTADO"] == "ACTIVO") {
                                   
-                                    echo '<td><button class="btn btn-success btn-sm">' . $value["ESTADO"] . '</button></td>';
+                                    echo '<td><button class="btn btn-success btn-sm btnEstado" idCliente="'.$value["ID_CLIENTE"].'" estadoCliente="DESACTIVO">' . $value["ESTADO"] . '</button></td>';
 
                                   }else {
                                     
-                                    echo '<td><button class="btn btn-danger btn-sm">' . $value["ESTADO"] . '</button></td>';
+                                    echo '<td><button class="btn btn-danger btn-sm btnEstado" idCliente="'.$value["ID_CLIENTE"].'" estadoCliente="ACTIVO">' . $value["ESTADO"] . '</button></td>';
 
                                   }
 
@@ -54,7 +54,7 @@
 
                           echo'     <td>
                                     <div class="btn-group">
-                                    <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal"><i class="far fa-edit"></i></button>
+                                    <button class="btn btn-warning btn-sm btnEditarCliente" idCliente="'.$value["ID_CLIENTE"].'" data-toggle="modal" data-target="#editarCliente"><i class="far fa-edit"></i></button>
                                   </td>
                                 </tr>';
                           
@@ -121,7 +121,7 @@
     </div>
     <!--Termina Modal nuevo-->
     <!--Inicia Modal editar-->
-    <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+    <div id="editarCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
       <div role="document" class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -132,18 +132,22 @@
             <p>Lorem ipsum dolor sit amet consectetur.</p>
             <form>
               <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="Email Address" class="form-control">
+                <label>Ruc</label>
+                <input type="number" id="editarRuc" class="form-control" readonly>
               </div>
               <div class="form-group">       
-                <label>Password</label>
-                <input type="password" placeholder="Password" class="form-control">
+                <label>Razon Social</label>
+                <input type="text" id="editarRazon"  class="form-control">
+              </div>
+              <div class="form-group">       
+                <label>Domicilio</label>
+                <input type="text" id="editarDomicilio" class="form-control">
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" data-dismiss="modal" class="btn btn-secondary">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
           </div>
         </div>
       </div>
